@@ -10,13 +10,15 @@ It's definitely not for everyone, but for modern-day C# developers.
 ## Node .. uhm Note!
 
 I don't plan on building this to completion. I just add(ed) what I need(ed).
-And I only write GDScript where I absolutely HAVE to.
+And I only write GDScript where I absolutely HAVE to. Or maybe if I have some spare time ..
 
-Contributions and pull requests are very welcome!!
+Still - I'd love to see GDSharp become an alternative fact! 
+It shows that GDScript does not need to look like a snake language.
 
-I'd love to see GDSharp become an alternative fact, showcasing 
-that GDScript absolutely does not require to look like Python.
-Especially since it is anything but Python.
+Thus: Contributions and pull requests are VERY welcome!!
+
+But please: Don't waste time writing all those wrappers manually! 
+Spend some AI credits and get it done >=10x faster, at least the first pass.
 
 ## Code Example 
 
