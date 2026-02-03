@@ -1,6 +1,6 @@
 # GDSharp (GD#) Readme
 
-_snake_case and SCREAMING_CONSTANTS are brutalist guidelines for code.
+_snake_case and SCREAMING_CONSTANTS are **brutalist guidelines** for code.<br/>
 GDSharp applies C# styleguides for GDScript built-in types via wrappers.
 
 GDSharp is something I started on a whim because I couldn't scan snake_case,
