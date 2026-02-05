@@ -92,39 +92,22 @@ This is what my [LunyScript](https://lunyscript.com) plugin.gd looks like:
         return ""
 
 
-    ## Wrapped Signals ...
-    func OnEnablePlugin() -> void:
-        AddLunyEngineAutoload()
-        EnsureAnalyzerReferencedInCsproj()
-
-    func OnDisablePlugin() -> void:
-        RemoveLunyEngineAutoload()
-
-    func OnEnterTree() -> void:
-        AddLunyEngineAutoload()
-        EnsureAnalyzerReferencedInCsproj()
-
-    func OnBuild() -> void:
-        EnsureAnalyzerReferencedInCsproj()
-
-    func OnEditorReceiveFocus() -> void:
-        EnsureAnalyzerReferencedInCsproj()
-
-
     ## GDScript Signals ...
     func _enable_plugin() -> void:
-        OnEnablePlugin()
+        AddLunyEngineAutoload()
+        EnsureAnalyzerReferencedInCsproj()
 
     func _disable_plugin() -> void:
-        OnDisablePlugin()
+        RemoveLunyEngineAutoload()
 
     func _enter_tree() -> void:
-        OnEnterTree()
+        AddLunyEngineAutoload()
+        EnsureAnalyzerReferencedInCsproj()
+
+    func _build() -> bool:
+        EnsureAnalyzerReferencedInCsproj()
+        return true
 
     func _notification(what: int) -> void:
         if what == NOTIFICATION_APPLICATION_FOCUS_IN:
-            OnEditorReceiveFocus()
-
-    func _build() -> bool:
-        OnBuild()
-        return true
+            EnsureAnalyzerReferencedInCsproj()
